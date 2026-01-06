@@ -3,7 +3,7 @@ Overview
 This repository presents a comprehensive machine learning–based framework to classify Parkinson’s Disease (PD) and its cognitive subtypes using T1-weighted structural MRI data.
 The study focuses on distinguishing between healthy controls and Parkinson’s disease patients with varying cognitive status, while emphasizing robust validation and model interpretability.
 
-Objectives
+#Objectives
 
 To classify Parkinson’s Disease and its cognitive subtypes using structural MRI–derived features
 
@@ -13,7 +13,7 @@ To provide model interpretability using SHAP (SHapley Additive exPlanations)
 
 To identify neuroanatomical features contributing to cognitive impairment in PD
 
-Classification Tasks
+#Classification Tasks
 
 The following classification problems were investigated:
 
@@ -27,36 +27,32 @@ PD-NC vs PD-MCI
 
 Multiclass Classification: HC vs PD-NC vs PD-MCI
 
-Dataset Information
+# Dataset Information
 
-Title
-Resting State MRI data from healthy control (HC), Parkinson's disease with normal cognition (PD-NC), and Parkinson's disease with mild cognitive impairment (PD-MCI) cohorts
+Title: Resting State MRI data from healthy control (HC), Parkinson's disease with normal cognition (PD-NC), and Parkinson's disease with mild cognitive impairment (PD-MCI) cohorts
 
-Description
-This dataset is part of a longitudinal study investigating Parkinson’s Disease (PD) and its associated cognitive impairments. Resting-state MRI data were collected from:
+Description: This dataset is part of a longitudinal study investigating Parkinson’s Disease (PD) and its associated cognitive impairments. Resting-state MRI data were collected from:
 
-Healthy Controls (HC)
+Healthy Controls (HC):
 
-Parkinson’s Disease patients with normal cognition (PD-NC)
+Parkinson’s Disease patients with normal cognition (PD-NC):
 
-Parkinson’s Disease patients with mild cognitive impairment (PD-MCI)
+Parkinson’s Disease patients with mild cognitive impairment (PD-MCI):
 
 The dataset follows the Brain Imaging Data Structure (BIDS) specification.
 
-Source
+# Source
 OpenNeuro
 🔗 https://openneuro.org/datasets/ds005892/versions/1.0.0
 
-Citation
+# Citation
 Kemp, A. S., Eubank, J., Younus, Y., Galvin, J. E., Prior, F. W., & Larson-Prior, L. J. (2025).
 Resting State MRI data from healthy control (HC), Parkinson's disease with normal cognition (PD-NC), and Parkinson's disease with mild cognitive impairment (PD-MCI) cohorts.
 OpenNeuro. https://doi.org/10.18112/openneuro.ds005892.v1.0.0
 
-Neuroimaging Modality
+Neuroimaging Modality: T1-weighted structural MRI
 
-T1-weighted structural MRI
-
-Preprocessing & Feature Extraction
+# Preprocessing & Feature Extraction
 
 Segmentation software: FreeSurfer v7.4.1
 
@@ -64,7 +60,7 @@ Cortical and subcortical features were extracted from T1-weighted MRI scans
 
 Features were used as inputs for downstream machine learning models
 
-Machine Learning Models
+# Machine Learning Models
 
 The following classification models were evaluated:
 
@@ -82,9 +78,9 @@ Gradient Boosting
 
 Bagging Classifier
 
-Soft Voting Classifier (ensemble)
+Voting Classifier (ensemble)
 
-Validation Strategy
+# Validation Strategy
 
 Stratified K-Fold Cross-Validation for performance estimation
 
@@ -106,7 +102,7 @@ SHAP visualizations
 
 Detailed interpretation of important neuroanatomical features
 
-Outputs
+#Outputs
 
 ROC curves for each fold and classification task
 
