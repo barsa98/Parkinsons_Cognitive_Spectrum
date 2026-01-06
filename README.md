@@ -3,7 +3,7 @@ Overview
 This repository presents a comprehensive machine learning–based framework to classify Parkinson’s Disease (PD) and its cognitive subtypes using T1-weighted structural MRI data.
 The study focuses on distinguishing between healthy controls and Parkinson’s disease patients with varying cognitive status, while emphasizing robust validation and model interpretability.
 
-#Objectives
+# Objectives
 
 To classify Parkinson’s Disease and its cognitive subtypes using structural MRI–derived features
 
@@ -13,7 +13,7 @@ To provide model interpretability using SHAP (SHapley Additive exPlanations)
 
 To identify neuroanatomical features contributing to cognitive impairment in PD
 
-#Classification Tasks
+# Classification Tasks
 
 The following classification problems were investigated:
 
@@ -33,11 +33,11 @@ Title: Resting State MRI data from healthy control (HC), Parkinson's disease wit
 
 Description: This dataset is part of a longitudinal study investigating Parkinson’s Disease (PD) and its associated cognitive impairments. Resting-state MRI data were collected from:
 
-Healthy Controls (HC):
+Healthy Controls (HC): 22 participants
 
-Parkinson’s Disease patients with normal cognition (PD-NC):
+Parkinson’s Disease patients with normal cognition (PD-NC): 18 participants
 
-Parkinson’s Disease patients with mild cognitive impairment (PD-MCI):
+Parkinson’s Disease patients with mild cognitive impairment (PD-MCI): 15 participants
 
 The dataset follows the Brain Imaging Data Structure (BIDS) specification.
 
@@ -102,7 +102,7 @@ SHAP visualizations
 
 Detailed interpretation of important neuroanatomical features
 
-#Outputs
+# Outputs
 
 ROC curves for each fold and classification task
 
