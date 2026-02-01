@@ -56,9 +56,9 @@ Neuroimaging Modality: T1-weighted structural MRI
 
 Segmentation software: FreeSurfer v7.4.1
 
-Cortical and subcortical features were extracted from T1-weighted MRI scans
+Cortical and subcortical morphometric features were extracted from T1-weighted MRI scans
 
-Features were used as inputs for downstream machine learning models
+Extracted neuroanatomical features were used as inputs for downstream machine learning models
 
 # Machine Learning Models
 
@@ -82,25 +82,39 @@ Voting Classifier (ensemble)
 
 # Validation Strategy
 
+To ensure robust, unbiased, and comparable evaluation across all models and classification tasks, the following validation strategy was consistently applied to every model and comparison:
+
 Stratified K-Fold Cross-Validation for performance estimation
 
-Nested Cross-Validation for unbiased hyperparameter tuning and evaluation
+Nested Stratified Cross-Validation for hyperparameter tuning and model evaluation
 
-Performance metric: ROC-AUC
+Identical cross-validation splits were used across models to ensure fair comparison
 
-Model Interpretability
+Performance metric: Area Under the ROC Curve (ROC-AUC)
 
-SHAP (SHapley Additive exPlanations) was used to:
+This unified validation framework ensures that differences in performance reflect model behavior rather than data leakage or sampling bias.
+
+# Model Interpretability
+
+SHAP (SHapley Additive exPlanations) was used for all models to:
 
 Quantify feature importance
 
-Visualize feature contributions using bar plots and beeswarm plots
+Visualize feature contributions using:
 
-A PDF report is included containing:
+Bar plots (mean absolute SHAP values)
 
-SHAP visualizations
+Beeswarm (dot) plots
 
-Detailed interpretation of important neuroanatomical features
+Identify neuroanatomical regions contributing to cognitive decline in PD
+
+A PDF report included in the repository contains:
+
+Fold-wise and aggregated SHAP visualizations
+
+Cross-model comparison of important features
+
+Neurobiological interpretation of findings
 
 # Outputs
 
